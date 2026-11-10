@@ -1,0 +1,345 @@
+{
+ "version": "stock-roundtable-v2.2",
+ "data_version": "stock-roundtable-v2.2",
+ "generated": "2026-11-10 15:21",
+ "modes": [
+  "intraday",
+  "eod"
+ ],
+ "window": [
+  "2026-05-15",
+  "2026-05-18",
+  "2026-05-19",
+  "2026-05-20",
+  "2026-05-21",
+  "2026-05-22",
+  "2026-05-25",
+  "2026-05-26",
+  "2026-05-27",
+  "2026-05-28",
+  "2026-05-29",
+  "2026-06-01",
+  "2026-06-02",
+  "2026-06-03",
+  "2026-06-04",
+  "2026-06-05",
+  "2026-06-08",
+  "2026-06-09",
+  "2026-06-10",
+  "2026-06-11",
+  "2026-06-12",
+  "2026-06-15",
+  "2026-06-16",
+  "2026-06-17",
+  "2026-06-18",
+  "2026-06-22",
+  "2026-06-23",
+  "2026-06-24",
+  "2026-06-25",
+  "2026-06-26",
+  "2026-06-29",
+  "2026-06-30",
+  "2026-07-01",
+  "2026-07-02",
+  "2026-07-03",
+  "2026-07-06",
+  "2026-07-07",
+  "2026-07-08",
+  "2026-07-09",
+  "2026-07-10",
+  "2026-07-13",
+  "2026-07-14",
+  "2026-07-15",
+  "2026-07-16",
+  "2026-07-17",
+  "2026-07-20",
+  "2026-07-21",
+  "2026-07-22",
+  "2026-07-23",
+  "2026-07-24",
+  "2026-07-27",
+  "2026-07-28",
+  "2026-07-29",
+  "2026-07-30",
+  "2026-07-31",
+  "2026-08-03",
+  "2026-08-04",
+  "2026-08-05",
+  "2026-08-06",
+  "2026-08-07",
+  "2026-08-10",
+  "2026-08-11",
+  "2026-08-12",
+  "2026-08-13",
+  "2026-08-14",
+  "2026-08-17",
+  "2026-08-18",
+  "2026-08-19",
+  "2026-08-20",
+  "2026-08-21",
+  "2026-08-24",
+  "2026-08-25",
+  "2026-08-26",
+  "2026-08-27",
+  "2026-08-28",
+  "2026-08-31",
+  "2026-09-01",
+  "2026-09-02",
+  "2026-09-03",
+  "2026-09-04",
+  "2026-09-07",
+  "2026-09-08",
+  "2026-09-09",
+  "2026-09-10",
+  "2026-09-11",
+  "2026-09-14",
+  "2026-09-15",
+  "2026-09-16",
+  "2026-09-17",
+  "2026-09-18",
+  "2026-09-21",
+  "2026-09-22",
+  "2026-09-23",
+  "2026-09-24",
+  "2026-09-28",
+  "2026-09-29",
+  "2026-09-30",
+  "2026-10-08",
+  "2026-10-09",
+  "2026-10-12",
+  "2026-10-13",
+  "2026-10-14",
+  "2026-10-15",
+  "2026-10-16",
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22",
+  "2026-10-23",
+  "2026-10-26",
+  "2026-10-27",
+  "2026-10-28",
+  "2026-10-29",
+  "2026-10-30",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-09",
+  "2026-11-10"
+ ],
+ "cutoffs": {
+  "intraday": "10:00",
+  "eod": "15:10"
+ },
+ "pit_rules": [
+  "history = panel rows [:t] (previous trading days only)",
+  "today = pre-open reference price, price band and limit prices from panel row t",
+  "today intraday = minute bars [0, k) only; stocks with no bar before the cutoff are invisible",
+  "outcomes computed after the decision is recorded; eod outcomes use the next day and are settled when that day is loaded; the T+1 sale reads the daily panel row after the buy day",
+  "names, ST flags and industries are a snapshot fetched 2026-08-22 (no price information)",
+  "universe = stocks still listed when the data was downloaded (minute files 2026-09-20, 09-24 and 10-03; daily bars 09-24): stocks delisted before that are missing (survivorship)"
+ ],
+ "pit_asserts": 242,
+ "scramble_audits": [
+  {
+   "date": "2026-05-15",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-05-15",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-05-29",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-05-29",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-06-12",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-06-12",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-06-29",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-06-29",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-07-13",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-07-13",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-07-27",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-07-27",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-08-10",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-08-10",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-08-24",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-08-24",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-09-07",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-09-07",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-09-21",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-09-21",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-10-13",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-10-13",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-10-27",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-10-27",
+   "mode": "eod",
+   "identical": true
+  },
+  {
+   "date": "2026-11-10",
+   "mode": "intraday",
+   "identical": true
+  },
+  {
+   "date": "2026-11-10",
+   "mode": "eod",
+   "identical": true
+  }
+ ],
+ "engine_sha256": {
+  "__init__.py": "3d5cfc8b8c38a1151534febfe5ea5af1f07b77e183b49f76a47352ce61f21b6f",
+  "audit.py": "af0c17606100e0ff063c450266ba55e995da09510cf24eae70eb9e51a60f6e5b",
+  "chat.py": "c7951c6019b4ec01e9cdebf1504ff56bfc13e27b2ccbf310d9a9d3bbaa3e7185",
+  "config.py": "468ac9edf769a499888923439a0a259bfb014710860d379121ba9679445d44ae",
+  "context.py": "deeb0c3463f6b1081c297325c6d9204ceb79afc04a5d5c32b5e2d069f146d225",
+  "debaters.py": "daa854a97c8c385a8a4a5663e6db77fa9262dd59828c01e23a643f71a3c773ad",
+  "evaluate.py": "889c83942683956ce43d53e28a51b7bc0f075f147607e7f5a37942df83744a0d",
+  "market_cache.py": "53bfeadca4dd9c09eae0519edb9b9b509f420b39d9328ccabafb39219358baa7",
+  "meeting.py": "01fa275a307e53f29e1b88c8361d89031ad7f030bf1c8f1ac5d1b8bd49628b3f",
+  "minutes.py": "5004865d75738ed8d7f34d08736bba8f7c6f460a0b59f4b399fe74c07d5e1efb",
+  "profile.py": "8a8521a2187c7138f013a279a0edfef6476361ffd49e0e926e4a6afaf908ddf8",
+  "report.py": "f99a10e56a014e4220c83bfe5c6ca40dc1bdd53995de073ebe2cadd34b4b1714",
+  "roundtable.py": "83e06503c7184a0cfe07f035080bdcb01beed2dc860668b3cea97c3cbfc743a1",
+  "scene.py": "80ba991c928e0cfd51fd8a99c8c6c2d83a5023587bab1af7ae808fa760d0d602",
+  "store.py": "ce583fc8579d136e6a165865008064bbd1c9d96b63a6e70dddb203d5d8475d51",
+  "run_backtest.py": "5fb3563d2b6e7b4b9b588a4b5cf1745dd4e1c2470d56d6e25627e2ef49976495"
+ },
+ "skills_sha256": {
+  "chaogu-yangjia": "533645efe87929cc2d5d982fdd5d9b3c452d92afb869ea76fd2252c385fc4c1a",
+  "92-kobe-a-share": "effaaed8ea1cad9ca9014267a089d313cd3674a57969a06d1c210e9b939b6e6d",
+  "chen-xiaoqun-a-share": "1b18ec5943f2d355c1278fc3e52987dbaeb70a48e289f35944425a25e6e369ed",
+  "zhao-laoge": "00207ec2e6e98a8cd6973023bf80c1156c9ac64a33b6199a388134ccd664ea22",
+  "zhang-mengzhu": "8396bcea0631e3d660e06a1837a81c19a032248929dc45081e8495e86db4d0e7",
+  "fang-xinxia": "10f3f6aead65f22df2d4aa3bffe42e2113302d8c339a018a81595e35a373b7b9",
+  "zuoshou-xinyi": "58e3de1d20ada63dba42cfa32e9e55e7d9e966b215d699d97b9338ffde2a2c56",
+  "qiao-bangzhu": "30b2d22afa3e8cf34994a262eb461eb6168d26be3cc7683fd75ebffcf332ce64",
+  "ruihexian": "4c9b8b28a205004441f7230fca854155a7b17c6a7fb4afa406226e4d73bef588",
+  "stock-roundtable": "4411178d65a0d18c2543d1abe40391c187d99ef15c6310ad689784c6c3b819d4"
+ },
+ "panel": {
+  "dates": [
+   "2025-04-07",
+   "2026-11-10"
+  ],
+  "codes": 5586
+ },
+ "thresholds": {
+  "STRONG_SCALED": 5.0,
+  "CLUSTER_MIN_STRONG": 6,
+  "CLUSTER_CORR": {
+   "intraday": 0.6,
+   "eod": 0.5
+  },
+  "CLUSTER_MIN_SIZE": 3,
+  "STAGE_LOOKBACK": 20,
+  "STAGE_MIN_HISTORY": 10,
+  "STAGE_DEFAULTS": {
+   "intraday": {
+    "lu_hot": 60,
+    "lu_cold": 15,
+    "ld_cold": 15,
+    "zb_high": 0.35,
+    "prem_hot": 2.5,
+    "prem_cold": -1.5
+   },
+   "eod": {
+    "lu_hot": 90,
+    "lu_cold": 30,
+    "ld_cold": 20,
+    "zb_high": 0.35,
+    "prem_hot": 3.0,
+    "prem_cold": -1.5
+   }
+  },
+  "NOMINATIONS_PER_DEBATER": 2,
+  "CONSENSUS_MIN": 2
+ }
+}

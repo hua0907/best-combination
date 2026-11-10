@@ -1,0 +1,29 @@
+# Local backups and assistant state
+/.backup/
+/.workbuddy/
+
+# Runtime logs and rebuildable market-data caches
+/logs/
+*.log
+**/cache/
+__pycache__/
+*.py[cod]
+
+# Local Python environments
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Credentials and machine-local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

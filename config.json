@@ -1,0 +1,12 @@
+{
+  "python": "C:\\Users\\hdy11\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "data_dir": "D:\\data",
+  "downloader": "D:\\youlong\\scripts\\tdx-daily-download.py",
+  "downloader_cwd": "D:\\youlong",
+  "engine_source": "D:\\skills\\stock\\stock-roundtable",
+  "sell_rule": "open",
+  "data_deadline": "15:40",
+  "retry_minutes": 2,
+  "open_report_when_done": true,
+  "holidays": []
+}

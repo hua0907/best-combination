@@ -1,0 +1,2 @@
+﻿mode,date,code,name,differs,buy_date,sell_date,filled,engine_filled,queued,engine_queued,entry,engine_entry,t1_best,engine_t1_best,t1_mid,engine_t1_mid,t1_worst,engine_t1_worst
+intraday,2026-10-30,001219,青岛食品,filled t1_best t1_mid t1_worst,2026-10-30,2026-11-02,True,False,True,True,19.94,,9.979939819458373,,3.1344032096288776,,-3.711133400200617,

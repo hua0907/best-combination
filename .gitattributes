@@ -1,0 +1,2 @@
+# Preserve the original bytes, including the frozen engine's SHA-256 fingerprints.
+* -text
